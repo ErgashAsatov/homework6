@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string path = @"D:\hello c#\gitignore";
+            File.Create(path);
         }
     }
 }
