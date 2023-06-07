@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string path = @"D:\hello c#";
+            string[] fullnames = Directory.GetFiles(path,"*.txt");
+                foreach (string fullname in fullnames)
+                {
+                    Console.WriteLine(fullname);
+                }
+           
         }
     }
 }
